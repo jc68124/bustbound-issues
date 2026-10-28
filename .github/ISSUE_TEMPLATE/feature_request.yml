@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest an improvement to Bustbound.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for Bustbound? Please search existing issues first and keep each request focused on one suggestion.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you like to see?
+      description: Describe your idea and how it would work for players.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: How would this improve the game?
+      description: What problem would it solve, or what would it make more enjoyable or easier to use?
+    validations:
+      required: true
+  - type: textarea
+    id: extra-details
+    attributes:
+      label: Examples or extra details
+      description: Add screenshots, sketches, or examples if they help explain your idea.
