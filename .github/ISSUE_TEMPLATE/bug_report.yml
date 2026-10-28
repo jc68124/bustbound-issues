@@ -1,0 +1,51 @@
+name: Bug report
+description: Report something that isn't working as expected.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Bustbound! Please search existing issues before submitting a new report.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you were doing when it happened.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If you know how to make it happen again, list the steps here.
+      placeholder: |
+        1. Open the game
+        2. ...
+        3. ...
+  - type: input
+    id: device-browser
+    attributes:
+      label: Device and browser
+      placeholder: "For example: Windows 11 / Chrome, or iPhone / Safari"
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Only happened once
+        - Sometimes
+        - Every time
+        - Not sure
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Screenshots or extra details
+      description: Attach screenshots or a short recording, or add anything else that might help.
